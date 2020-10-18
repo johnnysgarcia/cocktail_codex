@@ -1,0 +1,22 @@
+.cocktailOuter {
+  width: 300px;
+  margin-bottom: 60px;
+  height: 370px;
+  background-color: white;
+  margin-left: 1%;
+  margin-right: 1%;
+  box-shadow: 1px 1px 6px 0 rgba(0,0,0,.09);
+}
+
+h4 {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
