@@ -6,16 +6,16 @@ class Cocktail extends React.Component {
 
   constructor(props){
     super(props)
-    this.handleClick = this.handleClick.bind(this)
+    this.click = this.click.bind(this)
   }
 
-  handleClick(){
-    this.props.toggleModal(this.props.index);
+  click(){
+    this.props.handleClick(this.props.id);
   }
 
   render(){
     return(
-      <div className="cocktailOuter" onClick={this.handleClick}>
+      <div className="cocktailOuter" onClick={this.click}>
         <img src={this.props.image} />
         <h4>{this.props.name}</h4>
       </div>

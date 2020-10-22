@@ -8,7 +8,7 @@ class List extends React.Component{
     return(
       <div className="listOuter">
         {this.props.cocktails.map((item, index) => {
-          return <Cocktail index={index} name={item.name} image={item.image} toggleModal={this.props.toggleModal}/>
+          return <Cocktail index={index} name={item.name} image={item.image} handleClick={this.props.handleClick} id={item.id}/>
         })}
         <i aria-hidden="true"></i>
         <i aria-hidden="true"></i>

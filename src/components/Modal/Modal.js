@@ -10,23 +10,17 @@ class Modal extends React.Component {
           <button id="close">X</button>
           <img src={this.props.item.image} id="image"/>
           <div id="text">
-          <h2 id="title">{this.props.item.name}</h2>
+          <h1 id="title">{this.props.item.name}</h1>
           <p id="description">This is a wonderful summer drink</p>
           <hr/>
-          <label>Ingredients</label>
-          <ol id="ingredients">
-            <li>Ingredient 1</li>
-            <li>Ingredient 2</li>
-            <li>Ingredient 3</li>
-            <li>Ingredient 4</li>
-          </ol>
-          <label>Instructions</label>
-          <ol id="steps">
-            <li>Step 1</li>
-            <li>Step 2</li>
-            <li>Step 3</li>
-            <li>Step 4</li>
-          </ol>
+          <h4>Ingredients</h4>
+          <ul>
+          {this.props.item.ingredients.map(x => {
+            return <li>{x}</li>
+          })}
+          </ul>
+          <h4>Instructions</h4>
+          <p>{this.props.item.instructions}</p>
           </div>
         </div>
       </div>

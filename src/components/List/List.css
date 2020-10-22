@@ -2,11 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 30px 0px 10px 0px;
+  margin: 15px 0px 10px 0px;
 }
 
 i {
-  width: 300px;
+  width: 250px;
   margin-left: 1%;
   margin-right: 1%;
 }
